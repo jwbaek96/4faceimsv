@@ -19,6 +19,7 @@
     --text-shadow: 0 2px 10px rgba(0, 0, 0, 0.326);
     --text-shadow2: 0 3px 10px rgba(0, 0, 0, 0.576);
     --shadow: 0 0px 10px rgba(255, 255, 255, 0.328);
+    --shadow2: 0 0px 15px rgba(255, 255, 255, .9);
 
     --dot-0:#818181;
     --dot-1:#e3e3e3;
@@ -116,7 +117,7 @@ main{
     background-color: var(--bgc-1);
     backdrop-filter: blur(4px);
     box-shadow: var(--shadow);
-    transition: .15s ease-in-out background-color;
+    transition: .1s ease-in-out background-color, .15s ease-in-out box-shadow;
 }
 .thumb img{
     width: 100%;
@@ -145,6 +146,7 @@ main{
 .s2_1 .i:hover{
     cursor: pointer;
     background-color: var(--bgc-2);
+    box-shadow: var(--shadow2);
 }
 /* --------------------------------------------------- */
 
@@ -199,7 +201,7 @@ main{
 }
 
 /* -------------------- */
-#g1,#g2{
+#g1,#g2,#me{
     position: fixed;
     top: 0;
     left: 0;
@@ -287,5 +289,80 @@ main{
 .btn-move-next {
     justify-content: flex-end;
 }
+/* -------------------- */
+.me{
+    position: fixed;
+    top: 25px;left: 90px;
 
+    height: 55px;
+    padding: 5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 
+    overflow: hidden;
+    background: url(./assets/bg.png) no-repeat center center fixed;
+    background-size: auto;
+    /* background-color: #f6f6f60a; */
+    backdrop-filter: blur(4px);
+    box-shadow: var(--shadow);
+    transition: .15s ease-in-out box-shadow;
+}
+.me:hover{
+    cursor: pointer;
+    box-shadow: var(--shadow2);
+}
+.mp{
+    height: 100%;
+}
+.mp img{
+    height: 100%;
+    border-radius: 50%;
+}
+.mi{
+    padding-right: 7px;
+}
+#me,.me-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.me-container{
+    padding: 30px;
+    gap: 40px;
+}
+.meq,.mep{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+.mep img{
+    max-width: 150px;
+    border-radius: 50%;
+    width: 100%;
+}
+.met p{
+    line-height: 150%;
+}
+.meq-c{
+    border-radius: 30px;
+    background: #fff;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.meq img{
+    width: 150px;
+}
+.meq p{
+    color: #000;
+
+}

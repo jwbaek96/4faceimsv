@@ -37,3 +37,23 @@ popCheckbox2.addEventListener('change', () => {
         }, { once: true });
     }
 });
+// ----------------
+const popCheckbox3 = document.querySelector('#popCheckbox3');
+const me = document.querySelector('#me');
+
+// 체크박스 상태에 따라 .dpnone 클래스 토글
+popCheckbox3.addEventListener('change', () => {
+    if (popCheckbox3.checked) {
+        me.style.zIndex = '2';
+        me.style.visibility = 'visible';
+        me.style.opacity = '2';
+    } else {
+        me.style.opacity = '0'; 
+        me.addEventListener('transitionend', () => {
+            if (!popCheckbox3.checked) {
+                me.style.zIndex = '-1'; 
+                me.style.visibility = 'hidden';
+            }
+        }, { once: true });
+    }
+});

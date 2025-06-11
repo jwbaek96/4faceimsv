@@ -2,7 +2,24 @@ const g1db = [
             {num:"1", img : "./assets/g1/1.jpg"},
             {num:"2", img : "./assets/g1/2.jpg"},
             {num:"3", img : "./assets/g1/3.jpg"},
-            {num:"4", img : "./assets/g1/4.jpg"}
+            {num:"4", img : "./assets/g1/4.jpg"},
+            {num:"5", img : "./assets/g1/5.jpg"},
+            {num:"6", img : "./assets/g1/6.jpg"},
+            {num:"7", img : "./assets/g1/7.jpg"},
+            {num:"8", img : "./assets/g1/8.jpg"},
+            {num:"9", img : "./assets/g1/9.jpg"},
+            {num:"10", img : "./assets/g1/10.jpg"},
+            {num:"11", img : "./assets/g1/11.jpg"},
+            {num:"12", img : "./assets/g1/12.jpg"},
+            {num:"13", img : "./assets/g1/13.jpg"},
+            {num:"14", img : "./assets/g1/14.jpg"},
+            {num:"15", img : "./assets/g1/15.jpg"},
+            {num:"16", img : "./assets/g1/16.jpg"},
+            {num:"17", img : "./assets/g1/17.jpg"},
+            {num:"18", img : "./assets/g1/18.jpg"},
+            {num:"19", img : "./assets/g1/19.jpg"},
+            {num:"20", img : "./assets/g1/20.jpg"},
+            {num:"21", img : "./assets/g1/21.jpg"},
         ]
 const g1imgs = document.querySelector('#g1-imgs');
 const g1dots = document.querySelector('#g1dots');
