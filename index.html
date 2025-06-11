@@ -7,7 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <input id="popCheckbox1" type="checkbox" class="dpnone">
+    <input id="popCheckbox2" type="checkbox" class="dpnone">
+    <div id="g1">
+        <div class="xbg"onclick="popCheck1()"></div>
+        <div class="g">
+            <div class="g-slider">
+                <div id="g1-imgs" class="g-imgs">
+                </div>
+                <div class="g1-ctrl g-ctrl">
+                    <div class="btn-move btn-move-prev">&#10094;</div>
+                    <div class="btn-move btn-move-c"></div>
+                    <div class="btn-move btn-move-next">&#10095;</div>
+                </div>
+            </div>
+            <div id="g1dots" class="dots"></div>
+        </div>
+    </div>
+    <div id="g2">
+        <div class="xbg"onclick="popCheck2()"></div>
+        <div class="g">
+            <div class="g-slider">
+                <div id="g2-imgs" class="g-imgs">
+                </div>
+                <div class="g2-ctrl g-ctrl">
+                    <div class="btn-move btn-move-prev btn-move-prev2">&#10094;</div>
+                    <div class="btn-move btn-move-c btn-move-c2"></div>
+                    <div class="btn-move btn-move-next btn-move-next2">&#10095;</div>
+                </div>
+            </div>
+            <div id="g2dots" class="dots"></div>
+        </div>
+    </div>
 
+
+    
     <main>
         <div class="s1">
             <video autoplay loop muted plays-inline class="background-clip">
@@ -16,20 +50,23 @@
         </div>
         <div class="s2">
             <div class="s2_1">
-                <div class="photo i">
-                    <div class="text">
-                        <span>Photo</span>
-                    </div>
+                <div class="photo i" onclick="popCheck1()">
                     <div class="thumb">
                         <img src="./assets/photo thumb.png" alt="photo thumbnail">
                     </div>
+                    <div class="text">
+                        <p>Photo</p>
+                        <p>사진 구경하기</p>
+                    </div>
                 </div>
-                <div class="info i">
+                <div class="info i"  onclick="popCheck2()">
                     <div class="thumb">
-                        <img src="./assets/photo thumb.png" alt="photo thumbnail" class="witem-img">
+                        <!-- <img src="./assets/photo thumb.png" alt="photo thumbnail"> -->
+                        <img src="./assets/g2/2.JPG" alt="photo thumbnail" class="witem-img">
                     </div>
                     <div class="text">
-                        <span>Information</span>
+                        <p>Information</p>
+                        <p>프로젝트 정보 보기</p>
                     </div>
                 </div>
             </div>
@@ -40,6 +77,21 @@
         </div>
         
     </main>
-    
+   
+    <!--  -->
+    <script>
+        function popCheck1(){
+            const popCheckbox = document.querySelector('#popCheckbox1');
+            popCheckbox.click();
+        }
+        function popCheck2(){
+            const popCheckbox = document.querySelector('#popCheckbox2');
+            popCheckbox.click();
+        }
+    </script>
+    <script src="./gtoggle.js"></script>
+    <script src="./g1.js"></script>
+    <script src="./g2.js"></script>
+
 </body>
 </html>
