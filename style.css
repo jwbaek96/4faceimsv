@@ -1,0 +1,46 @@
+@import "./reset.css";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* --------------------- */
+::-webkit-scrollbar{
+    display: none;
+}
+:root{
+    --witem-bgc: #000000;
+    -moz-stack-sizing: #e0d42991;
+    --txtColor-home: #ffd900;
+    --txtColor-1:#fff;
+    --txtColor-2:#dddddd;
+    --txtColor-3:#bebebe;
+    --txtColor-4:#8d8d8d;
+}
+*{
+    text-rendering: optimizelegibility;
+    box-sizing: border-box;
+    color: var(--txtColor-1);}
+/*  */
+html{
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+}
+body{
+    background: url(./assets/bg.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0e0e;
+    position: relative;
+    /* overflow: hidden; */
+    font-family: 'Pretendard-Regular', Helvetica,sans-serif ,serif;
+}
