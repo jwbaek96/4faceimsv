@@ -226,7 +226,7 @@ main{
 }
 .g{
     width: 100%;
-    max-width: 80%;
+    max-width: 85%;
     /* height: 100%; */
     display: block;
     text-align: center;
@@ -251,7 +251,7 @@ main{
 }
 .g-imgs img {
     flex: 0 0 100%;
-    margin: 2% 0;
+    margin: 1.5% 0;
     object-fit: contain;
 }
 .g-ctrl {
